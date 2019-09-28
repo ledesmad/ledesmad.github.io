@@ -3,7 +3,7 @@
 <html lang="en">
   <title>Test Website</title>
   <head>
-     <center><h1>Welcome to my web page</h1></center>
+     <center><h1>Welcome to my Web Page</h1></center>
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="386616824958-l3s7esc4jjh25usj9camki1jsisto2ck.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -21,9 +21,12 @@
         console.log('Family Name: ' + profile.getFamilyName());
         console.log("Image URL: " + profile.getImageUrl());
         console.log("Email: " + profile.getEmail());
+        <var>minSpeed</var> = profile.getName();
+        document.getElementById("messageBox").innerHTML = "Welcome, " + <var>name</var> + ".)";
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
+        
    }
       function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
